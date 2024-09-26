@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Donatella Fioretti, SAP consultant with extensive experience in SAP projects, passionate about expanding my knowledge in the IT sector in particular in Python.">
+  <title>Portfolio - Donatella Fioretti</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Donatella Fioretti</h1>
+      <p>SAP Consultant</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#work">What I Do</a></li>
+          <li><a href="#future">Future Goals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Me Section -->
+    <section id="about" class="section parallax">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="profile-pic-container">
+          <img src="foto_portfolio.jpg" alt="Donatella Fioretti" class="profile-pic">
+        </div>
+        <p>I am <strong>Donatella Fioretti</strong>, a SAP consultant with a strong passion for expanding my knowledge in the IT sector. I have gained extensive experience working on various projects for companies and private clients.</p>
+      </div>
+    </section>
+
+    <!-- What I Do Section -->
+    <section id="work" class="section parallax">
+      <div class="container">
+        <h2>What I Do</h2>
+        <p>Currently, I'm lookinf for a new job as SAP consultant, specializing in SAP implementation and customization.
+          During this time I have worked in Pyhton activities.Some of my recent projects include:</p>
+        <ul>
+          <li>Project 1 - Python Pandas, Numpy</li>
+          <li>Project 2 - Python API </li>
+          <li>Project 3 - Python Project</li>
+        </ul>
+        <button onclick="window.open('path_to_your_cv.pdf')">Download CV</button>
+        <button onclick="window.open('path_to_your_projects.html')">View Projects</button>
+      </div>
+    </section>
+
+    <!-- Future Goals Section -->
+    <section id="future" class="section parallax">
+      <div class="container">
+        <h2>Future Goals</h2>
+        <p>In the near future, I would like to expand my skills by working on projects related to the SAP and IT world. My goal is to become an expert in SAP customization and contribute to impactful projects.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section parallax">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you would like to collaborate or have any questions, feel free to contact me:</p>
+        <ul>
+          <li>Email: <a href="mailto:donatella.fioretti.df@gmail.com">donatella.fioretti.df@gmail.com</a></li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/donatella-fioretti" target="_blank">linkedin.com/in/donatella-fioretti</a></li>
+          <li>Website: <a href="https://www.yourwebsite.com" target="_blank">www.yourwebsite.com</a></li>
+          <li>Book an appointment: <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0UrMCNHJ1IYV6eLcdEt9yazBQ0uVBu5_vlJsVNAkx7cZwHNQMmsf3AqyLuvo78CzxNUnWGCHfP" target="_blank">Schedule with me</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Donatella Fioretti. All rights reserved.</p>
+      <div class="logos">
+        <img src="python_logo.png" alt="Python" class="logo">
+        <img src="pandas_logo.png" alt="Pandas" class="logo">
+        <img src="pycharm_logo.png" alt="PyCharm" class="logo">
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for smooth scrolling -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

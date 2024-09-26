@@ -1,0 +1,195 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(to right, #add8e6, #ffffff);
+  scroll-behavior: smooth; /* Smooth scroll behavior */
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #add8e6;
+  text-decoration: underline;
+}
+
+/* Parallax effect */
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
+#about.parallax {
+  background-image: url('about_background.jpg'); /* Add a background image for the section */
+}
+
+#work.parallax {
+  background-image: url('work_background.jpg');
+}
+
+#future.parallax {
+  background-image: url('future_background.jpg');
+}
+
+#contact.parallax {
+  background-image: url('contact_background.jpg');
+}
+
+/* Animations */
+.section {
+  padding: 40px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+.section:nth-child(even) {
+  animation-delay: 0.7s;
+}
+
+/* Styles for profile picture container */
+.profile-pic-container {
+  border: 2px solid #35424a; /* Bordo del rettangolo */
+  padding: 10px; /* Spazio interno */
+  border-radius: 10px; /* Raggio degli angoli */
+  background-color: #ffffff; /* Colore di sfondo */
+  display: inline-block; /* Per allineare al centro */
+  text-align: center; /* Centrato */
+}
+
+.profile-pic {
+  width: 150px; /* Dimensione dell'immagine */
+  height: auto;
+  border-radius: 10px; /* Raggio degli angoli dell'immagine */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+  margin: 0 10px;
+}
+
+/* Button styles */
+button {
+  background-color: #35424a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Add margin for separation */
+}
+
+button:hover {
+  background-color: #5a6e79;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+
+  .section p {
+    font-size: 16px;
+  }
+
+  .parallax {
+    background-attachment: scroll;
+  }
+}
